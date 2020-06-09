@@ -1,6 +1,6 @@
 --
-- name: This command will change the working directory to /var/.
-  hosts: 
+- name: Example playbook
+  hosts:
     169.47.251.23
   shell:
     cmd: ls -l | grep log
