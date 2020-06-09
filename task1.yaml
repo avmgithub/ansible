@@ -1,5 +1,7 @@
 # You can also use the 'cmd' parameter instead of free form format.
 - name: This command will change the working directory to /var/.
+  hosts: 
+    169.47.251.23
   shell:
     cmd: ls -l | grep log
     chdir: /var/
