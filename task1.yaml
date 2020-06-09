@@ -1,6 +1,6 @@
 ---
 - name: Example playbook
-  hosts: all
+  hosts: 169.47.251.23
   tasks:
     - name: testing 
       shell:
