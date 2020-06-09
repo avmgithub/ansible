@@ -1,7 +1,8 @@
 --
 - name: Example playbook
-  hosts:
-    169.47.251.23
-  shell:
-    cmd: ls -l | grep log
-    chdir: /var/
+  hosts: all
+  tasks:
+    - name: testing 
+      shell:
+        cmd: ls -l | grep log
+        chdir: /var/
