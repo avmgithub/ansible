@@ -7,5 +7,6 @@
         cmd: ls -l | grep log
         chdir: /var/
     - name: test use of variables
-        cmd: rm ansible.txt; "echo {{ var1 }} >> ansible.txt"
+        cmd: rm ansible.txt
+        cmd: "echo {{ var1 }} >> ansible.txt"
         chdir: /tmp
